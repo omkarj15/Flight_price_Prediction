@@ -20,10 +20,14 @@ This report presents the analysis and prediction of flight prices using various 
 ## Exploratory Data Analysis (EDA)
 1. Most Preferred Airline:
    - Jet Airways is the most preferred airline, with a preference of 35%.
+     ![Screenshot](Image/a.png)
+
 2. Majority of Flights Take Off from:
    - Delhi is the source of the majority of flights, accounting for approximately 42%.
+     ![Screenshot](Image/b.png)
 3. Maximum Flights Land in:
    - Cochin Airport is the most common destination, with about 42% of flights landing there.
+     ![Screenshot](Image/c.png)
 
 ## Impact of Independent Features on Price
 1. Highest Priced Airline:
@@ -32,17 +36,22 @@ This report presents the analysis and prediction of flight prices using various 
    - Identified flights priced higher than 50,000, with Jet Airways Business having the majority.
 3. Preferred Arrival and Departure Times:
    - Customers prefer flights with evening arrival times and early morning departure times.
+     ![Screenshot](Image/d.png) ![Screenshot](Image/e.png)
 
 ## Model Building
 1. Trained various regression algorithms including Linear Regression, Ridge Regression, Lasso Regression, Decision Tree Regressor, Random Forest Regressor, K-Nearest Neighbors (KNN), Gradient Boosting Regressor, AdaBoost Regressor, and XGBoost Regressor.
 2. Evaluated models based on R2 score and root mean square error (RMSE) on both training and testing datasets.
 
 ## Model Evaluation
+![Screenshot](Image/f.png)
+![Screenshot](Image/g.png)
 1. Decision Tree and Random Forest models showed good fit on both train and test data but surpassed the RMSE threshold.
 2. Gradient Boosting and XGBoosting models achieved good R2 scores and RMSE values below 10, indicating better generalization.
 
 ## Model Fine-Tuning
 1. Utilized GridSearchCV to fine-tune hyperparameters for Decision Tree, Random Forest, Gradient Boosting, and XGBoosting models.
+   ![Screenshot](Image/h.png)
+   ![Screenshot](Image/i.png)
 
 ## Final Model Selection
 1. Selected the XGBoost Regressor model for its balanced performance on both training and testing datasets.
